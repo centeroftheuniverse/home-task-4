@@ -322,7 +322,7 @@ footer{
     background-color:#252727; 
     text-align: center;
     color:white;
-    margin: 3px;
+    padding: 3px;
 }
 @media (max-width: 1200px){
     .intro_title{
@@ -406,6 +406,9 @@ footer{
     .stat_text{
     font-size: 10px;
     }
+    .stat-item{
+        padding:20px;
+    }
 }
 @media (max-width: 575px){
     .intro_title{
@@ -441,6 +444,12 @@ footer{
     }
     .stat_text{
     font-size: 8px;
+    }
+    .stat-item{
+        padding:20px;
+    }
+    textarea{
+        width: 250px;
     }
 }
 
