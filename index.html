@@ -2,22 +2,25 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>HappyHouse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+    <title>HappyHouse</title>
 	<link rel="stylesheet" href="css/index.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">	
 </head>
 <body>
-	<header class="header">
-		<div class="container">
+	<header class="header active">
+		<div class="container" id="header-top">
 			<div class="header_inner">
 				<div class="logo"><img src="img/logo.png" alt="HappyHouse"></div>
-				<nav class="nav">
-					<a href="#">ABOUT</a>
-					<a href="#">APARTMENT</a>
-					<a href="#">PURCHASE</a>
-					<a href="#">NEWS</a>
-					<a href="#">CONTACTS</a>
+				<nav class="nav" id="nav">
+					<a class="nav-link" href="#">ABOUT</a>
+					<a class="nav-link" href="#">APARTMENT</a>
+					<a class="nav-link" href="#">PURCHASE</a>
+					<a class="nav-link" href="#">CONTACTS</a>
 				</nav>
+                <button class="nav-toggle" id="nav_toggle" type="button">
+                    <span class="nav-toggle-item"></span>
+                </button>
 			</div>
 		</div>
 	</header>
@@ -27,77 +30,168 @@
 			<button type="submit">BUY APATRMENTS</button>
 		</div>
 	</div>
-
+    <div class="section">
+        <div class="container">
+            <div class="section_header">                
+                <h3 class="section_title">We building homes for you since 1986</h3>
+                <h2 class="section_subtitle">HAPPY HOUSE</h2>
+                <div class="section_text">
+                <h3>More then 9000 of happy clients 
+                    living in modern comfortable 
+                    apartaments made by HH</h3>
+                <p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+                </span></p>
+                <button onclick="moreB()" id="moreBtn">Read more</button>                 
+                </div>
+                <div class="about">
+                    <div class="about_item">
+                        <div class="about_image">
+                            <img src="img/building1.jpg" alt="Building">
+                        </div>
+                        <div class="about_logo">
+                            <img src="img/logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="about_item">
+                        <div class="about_image">
+                            <img src="img/building2.jpg" alt="Building">
+                        </div>
+                        <div class="about_logo">
+                            <img src="img/logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="about_item">
+                        <div class="about_image">
+                            <img src="img/building3.jpg" alt="Building">
+                        </div>
+                        <div class="about_logo">
+                            <img src="img/logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="statistic">
+        <div class="container">
+            <div class="stat">
+                <div class="stat-item">
+                    <div class="stat_counter">898</div>
+                    <div class="stat_text">Buildings</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat_counter">12</div>
+                    <div class="stat_text">Skyscrapers</div>
+                </div>               
+                <div class="stat-item">
+                    <div class="stat_counter">182</div>
+                    <div class="stat_text">Projects in process</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat_counter">9000</div>
+                    <div class="stat_text">Happy clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat_counter">5670</div>
+                    <div class="stat_text">Professionals</div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="section" id="plans">
+        <div class="container">
+            <h2 id="plans">Plans of the rooms</h2> 
+                <div class="about" id="room_plan">                               
+                    <div class="about_item">
+                        <div class="about_image">
+                            <img src="img/plan1.png" alt="Building">
+                        </div>
+                        <div class="about_logo">
+                            <img src="img/logo.png" alt="img/plan3.png">
+                        </div>
+                        <div class="about_text">
+                            <h3>1 room</h3>
+                            <h4>from 100 000 $</h4>
+                        </div>
+                    </div>
+                    <div class="about_item">
+                        <div class="about_image">
+                            <img src="img/plan2.png" alt="Building">
+                        </div>
+                        <div class="about_logo">
+                            <img src="img/logo.png" alt="img/plan3.png">
+                        </div>
+                        <div class="about_text">
+                            <h3>2 rooms</h3>
+                            <h4>from 500 000 $</h4>
+                        </div>
+                    </div>
+                    <div class="about_item">
+                        <div class="about_image">
+                            <img src="img/plan3.png" alt="Building">
+                        </div>                        
+                        <div class="about_logo">
+                            <img src="img/logo.png" alt="Logo">
+                        </div>
+                        <div class="about_text">
+                            <h3>3 rooms</h3>
+                            <h4>from 1000 000 $</h4>
+                        </div>
+                    </div>
+                </div>
+        </div> 
+    </div>
+    <div class="section" id="message">
+        <div class="container" id="picture"> <h2 class="h_connect">Connect with us</h2>
+            <div class="connect_form"> 
+                <div class="connect_name">
+                    <form action="message_name">
+                        <input placeholder="   Name" type="text" class="form_connection">
+                        <input placeholder="   E-mail" type="text" class="form_connection">
+                        <input placeholder="   Telephone" type="text" class="form_connection">
+                    </form>
+                </div>
+                <div class="connect_text">
+                    <textarea name="" id=""  placeholder="   Enter your message"></textarea>
+                    <button>Send message</button>
+                </div>                
+            </div>
+            <div class="call_us">
+                    <h2 class="h_connect">Order a call from us</h2>
+                    <h4 class="h_connect">Just enter your number and hit "Enter",
+                     we'll call you back in 5 sec.</h4>
+                     <div id="tel">
+                        <input type="tel" id="telephone" placeholder="   Your telephone">
+                     </div>
+            </div>
+        </div>
+    </div>
 	<!-- ////////////////// -->
-	<div id="happyhouse">
-				<h2>HAPPY HOUSE</h2>
-				<h4>We building homes for you since 1986</h4>
+    <div class="section" id="map">
+        <div class="container">
+            <div class="map"> <br>
+				<iframe id="map" width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 			</div>
-			<div id="ul">
-				<ul>
-					<li>Best quality</li>
-					<li>Low price</li>
-					<li>Modern design</li>
-				</ul>
-			</div>
-			<div>
-				<img class="projectpicture" src="img/projectbuilding.jpg" alt="Project of the building">
-			</div>
-			<div>
-				<h3>More then 9000 of happy clients <br>
-					living in modern comfortable <br>
-					apartaments made by HH</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-			</div>
-			<div class="plan"> <h2>PLAN</h2>
-				<img id="plan-img" src="img/plan1.png" alt="Plan image">
-				<img id="plan-img" src="img/plan2.png" alt="Plan image">
-				<img id="plan-img" src="img/plan3.png" alt="Plan image">
-			</div>
-			<div class="contacts">
-				<img class="contacts" src="img/contacts.jpg" alt="Contacts form">				
-				<form>
-					<h2>CONNET WITH OUR MANGER</h2>
-					<input name="Name" type="text" placeholder="Enter your name"><br>
-					<input name="E-mail" type="email" placeholder="Enter your E-mail"><br>
-					<input name="Telephone" type="tel" placeholder="Enter your Telephone"><br>
-					<textarea name="Message" rows="10" cols="30">Message</textarea><br>
-					<button type="button" onclick="alert('Hola')">Submit</button>
-					<h2>ORDER A CALL FROM US</h2>	
-					<h4>
-					Enter your number and 
-					we’ll call you in 5 seconds
-					</h4>
-					<input type="number" name="telephone"><br>
-					<button type="button" onclick="alert('Hola')">Submit</button>						
-				</form>
-			</div>
-
-			<div class="news">
-				<div class="news1">
-					<img class="news-image" src="img/news.jpeg" alt="Plan">
-					<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-				</div>
-				<div class="news1">
-					<img class="news-image" src="img/news.jpeg" alt="Plan">
-					<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-				</div>
-				<div class="news1">
-					<img class="news-image" src="img/news.jpeg" alt="Plan">
-					<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-				</div><br>
-				<button type="button" onclick="alert('Hola')">Submit</button>		
-
-			</div> 
-
-			<div class="map"> <br>
-				<iframe id="map" width="775" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-			</div>
-	
-</body>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <h2>Patrners</h2>
+                <div class="logos">
+                    <img src="img/logos/logo1.jpg" alt="partner logo">
+                    <img src="img/logos/logo2.jpg" alt="partner logo">
+                    <img src="img/logos/logo3.jpg" alt="partner logo">
+                    <img src="img/logos/logo4.jpg" alt="partner logo">
+                    <img src="img/logos/logo5.jpg" alt="partner logo">
+                </div>
+        </div>
+    </div>
+    <footer>
+        All rights reserved 2019  ©  
+        Dmytro Lilikovych
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>           
 </html>
