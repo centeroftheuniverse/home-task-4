@@ -8,17 +8,19 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">	
 </head>
 <body>
-	<header class="header">
-		<div class="container">
+	<header class="header active">
+		<div class="container" id="header-top">
 			<div class="header_inner">
 				<div class="logo"><img src="img/logo.png" alt="HappyHouse"></div>
-				<nav class="nav">
-					<a href="#">ABOUT</a>
-					<a href="#">APARTMENT</a>
-					<a href="#">PURCHASE</a>
-					<a href="#">GALLERY</a>
-					<a href="#">CONTACTS</a>
+				<nav class="nav" id="nav">
+					<a class="nav-link" href="#">ABOUT</a>
+					<a class="nav-link" href="#">APARTMENT</a>
+					<a class="nav-link" href="#">PURCHASE</a>
+					<a class="nav-link" href="#">CONTACTS</a>
 				</nav>
+                <button class="nav-toggle" id="nav_toggle" type="button">
+                    <span class="nav-toggle-item"></span>
+                </button>
 			</div>
 		</div>
 	</header>
@@ -40,7 +42,7 @@
                 <p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
                 </span></p>
-                <button onclick="myFunction()" id="myBtn">Read more</button>                 
+                <button onclick="moreB()" id="moreBtn">Read more</button>                 
                 </div>
                 <div class="about">
                     <div class="about_item">
@@ -189,6 +191,7 @@
         All rights reserved 2019  ©  
         Dmytro Lilikovych
     </footer>
-</body>           
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
+</body>           
 </html>
